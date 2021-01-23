@@ -1,0 +1,159 @@
+/* ---- Base Rules ---- */
+html {
+    scroll-behavior: auto;
+}
+
+body {
+    background: whitesmoke;
+    
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    color: gray;
+}
+
+/* Typeography General*/
+h1 {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 3em;
+    margin: 2em 1rem;
+    color: black;
+}
+
+@media only screen and (min-width: 35em){
+    h1 {
+        font-size: 7em;
+        margin: 2em 4rem 1em;
+    }
+}
+
+h2 {
+    border-bottom: 1px solid red;
+    font-family: 'Oxygen', Sans-Serif;
+    font-size: 3em;
+    color: red;
+}
+
+p {
+    line-height: 1.6em;
+    color: black;
+}
+
+/* ---- Layout Rules ---- */
+main {
+    margin: 10vh 1em 10vh;
+}
+
+.mainhero {
+    min-height: 40vh;
+    padding-top: 3em;
+}
+
+section {
+    position: relative;
+    min-height: 80vh;
+}
+
+/* ---- Module Rules ---- */
+
+/* Navigation Styles*/
+.navbarmenu ul {
+    padding-left: 0;
+    margin: 0;
+    text-align: right;
+}
+
+.navbarmenu li {
+    display: inline-block;
+}
+
+.navbarmenu .menulink {
+    display: block;
+    padding: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+
+.navbarmenu .menulink:hover {
+    background: gray;
+    color: #fff;
+    transition: ease 0.3s all;
+}
+
+/* Header Styles */
+.pageheader {
+    background: rgb(231, 231, 231);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+/* Footer Styles */
+.pagefooter {
+    background: rgb(231, 231, 231);
+    padding: 3em;
+    color: #fff;
+}
+
+.pagefooter p{
+    color: black;
+}
+
+.footerbody {
+    color: black;
+    font-size: 18px;
+    text-align: left;
+    padding: 15px;
+}
+
+/* ---- Theme Rules ---- */
+/* Landing Container Styles */
+.landingcontainer {
+    padding: 1em;
+    text-align: left;
+}
+
+@media only screen and (min-width: 35em){
+    .landingcontainer {
+        max-width: 50em;
+        padding: 4em;
+    }
+}
+
+section:nth-of-type(even) .landingcontainer {
+    margin-right: 0;
+    margin-left: auto;
+    text-align: right; 
+}
+
+.sociallink {
+    color: red;
+}
+
+.sociallink:hover {
+    color: gray;
+    cursor: -webkit-grab;
+}
+
+.socialicons {
+    margin: 0 4rem;
+    text-align: center;
+}
+
+/* ---- Theme State Rules ---- */
+/* Section Active Styles */
+/* Applied youractiveclass class through javascript */
+section.youractiveclass {
+    background: lightgray;
+}
+
+section.youractiveclass .landingcontainer::before {
+    opacity: 1;
+    animation: mymove 4s linear 0s infinite forwards;
+}
+
+section.youractiveclass .landingcontainer::after {
+    opacity: 1;
+    animation: mymove 5s linear 0s infinite forwards reverse;
+}
