@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Charted Consult Landing Page</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="pageheader">
+    <nav class="navbarmenu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbarlist"></ul>
+    </nav>
+  </header>
+  <main>
+    <header class="mainhero">
+      <h1>Charted Consult</h1>
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="section1" data-nav="App Development" class="youractiveclass">
+      <div class="landingcontainer">
+        <h2>App Development</h2>
+        <p>Development of web, mobile, and desktop applications, as well as Application Programming Interfaces (APIs) based on approved UX design and business requirements.</p>
+      </div>
+    </section>
+    <section id="section2" data-nav="Machine Learning">
+      <div class="landingcontainer">
+        <h2>Machine Learning</h2>
+        <p>Machine learning applied to customer segmentation, lifetime value prediction, product recommendation, medical diagnosis, image recognition, fraud detection, spam detection, and predictive maintenance services.</p>
+      </div>
+    </section>
+    <section id="section3" data-nav="Cloud Development">
+      <div class="landingcontainer">
+        <h2>Cloud Development</h2>
+        <p>Design and development of secure, scalable, extendable, intelligent, and maintainable full-stack and serverless cloud-native applications and products. Management of servers and deployment of applications to server instances.</p>
+      </div>
+    </section>
+    <section id="section4" data-nav="Internet of Things">
+      <div class="landingcontainer">
+        <h2>Internet of Things</h2>
+        <p>Application of embedded sensors, software, and other technologies to connect and exchange data with other devices and systems over the internet. Leverage system integration, sensor solutions, gateway solutions, cloud solutions, connectivity, user experience, and analytics to automate processes, reduce labor costs and waste, and improve service delivery.</p>
+      </div>
+    </section>
+    <section id="section5" data-nav="Natural Language Processing">
+      <div class="landingcontainer">
+        <h2>Natural Language Processing</h2>
+        <p>Applications include mail classification, social media monitoring, streamlining patient information, sentiment analysis, text analysis, survey analytics, spam filters, autocomplete, autocorrect, spell check, algorithmic trading, smart search, duplicate detection, translation tools, chatbots and upgraded chatbots, bots linkage to knowledge bases, aircraft maintenance, smart home devices, and automatic insights.</p>
+      </div>
+    </section>
+  </main>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+  <div class="socialicons">
+    <a href="https://www.linkedin.com/in/charted consult/" target="_blank" class="sociallink"><i
+        class="fab fa-2x fa-linkedin socialicon"></i></a>
+    <a href="https://www.facebook.com/charted consult" class="sociallink"><i
+        class="fab fa-2x fa-facebook socialicon"></i></a>
+    <a href="https://www.instagram.com/charted consult" class="sociallink"><i
+        class="fab fa-2x fa-instagram socialicon"></i></a>
+    <a href="https://www.twitter.com/charted consult" class="sociallink"><i
+        class="fab fa-2x fa-twitter socialicon"></i></a>
+    <a href="https://www.Pinterest.com/charted consult" class="sociallink"><i
+        class="fab fa-2x fa-pinterest socialicon"></i></a>
+    <a href="https://www.youtube.com/charted consult" class="sociallink"><i
+        class="fab fa-2x fa-youtube socialicon"></i></a>
+  </div>
+<footer class=" pagefooter">
+  <p class="footerbody">@2021 Charted Consult - All copyrights reserved</p>
+</footer>
+<script src="js/app.js"></script>
+</body>
+</html>
