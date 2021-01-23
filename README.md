@@ -1,4 +1,4 @@
-Project: Charted Consult Landing Page
+Project: Charted Consult Marketing Landing Page
 
 Project Objective: Build a dynamic landing page.  
 
